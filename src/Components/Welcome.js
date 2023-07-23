@@ -1,0 +1,52 @@
+import React, { Component } from "react";
+import "./Welcome.css";
+import "smoothscroll-polyfill";
+
+class Welcome extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  handleScrollDown = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: "smooth", // Use smooth scrolling behavior
+    });
+  };
+
+  render() {
+    return (
+      <div className="Welcome">
+        <h1 className="fade-in">
+          Unfortunately I'm too busy to create my own website, although feel free to contact me!
+        </h1>
+        <h3>
+          <a
+            className="contact-link"
+            href="mailto:bencebarnabasszocs@gmail.com?subject=Mail from a customer"
+          >
+            bencebarnabasszocs@gmail.com
+          </a>
+        </h3>
+        <button className="scroll-button" onClick={this.handleScrollDown}>
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="feather feather-chevron-down"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </div>
+    );
+  }
+}
+
+export default Welcome;

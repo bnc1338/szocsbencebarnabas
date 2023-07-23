@@ -1,0 +1,41 @@
+.Portofolio{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(98, 98, 98);
+    background: rgba(39, 39, 39, 1.0);
+    background: linear-gradient(0deg, rgba(39, 39, 39, 1.0), rgba(28, 28, 28, 1.0));
+}
+
+.Portofolio >h2{
+    margin-top: 10vh;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: x-large;
+}
+
+.Portofolio > .list {
+    max-width: 60vw;
+}
+.Portofolio > .list > .job{
+    max-height: 100px;
+    max-width: 100%;
+    margin: 10px;
+}
+
+.Portofolio > .list > .job >h4{
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+
+.Portofolio > .list > .job >h5{
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+}
