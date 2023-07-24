@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-  var host = "www.szocsbencebarnabas.com" || "szocsbencebarnabas.com";
-      if ((host == window.location.host) && (window.location.protocol != "https:")){
-      window.location.protocol = "https";
-      }
-      
+  var host1 = "www.szocsbencebarnabas.com";
+  var host2 = "szocsbencebarnabas.com";
+  if ((window.location.host==host1 || window.location.host==host2) && (window.location.protocol != "https:")){
+  window.location.protocol = "https";
+  }
+
 root.render(
   <React.StrictMode>
     <App />
