@@ -1,7 +1,7 @@
 {
     "root":"build/",
-    "routes":{
-        "/**":"index.html"
+    "routes": {
+        "/**": "index.html"
     },
-    "https_only":true
+    "https_only": true
 }
