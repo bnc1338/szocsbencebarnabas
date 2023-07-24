@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Welcome.css";
 import "smoothscroll-polyfill";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 class Welcome extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class Welcome extends Component {
             bencebarnabasszocs@gmail.com
           </a>
         </h3>
+        <Link to="Portofolio_" spy={true} smooth={true}>
         <button className="scroll-button" onClick={this.handleScrollDown}>
           <svg
             viewBox="0 0 24 24"
@@ -44,6 +46,7 @@ class Welcome extends Component {
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </button>
+        </Link>
       </div>
     );
   }

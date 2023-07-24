@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import "./Portofolio.css";
+import { Element } from "react-scroll";
 
 class Portofolio extends Component {
     constructor(props) {
@@ -12,6 +13,7 @@ class Portofolio extends Component {
 
     render() {
         return (
+            <Element name="Portofolio_">
             <div className="Portofolio">
                 <h2>Freelancing Jobs</h2>
                 <div className="list">
@@ -24,7 +26,8 @@ class Portofolio extends Component {
                         <h5>2023</h5>
                     </div>
                 </div>
-            </div>
+            </div>       
+            </Element>
         );
     }
 
