@@ -9,13 +9,6 @@ class Welcome extends Component {
     this.state = {};
   }
 
-  handleScrollDown = () => {
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth", // Use smooth scrolling behavior
-    });
-  };
-
   render() {
     return (
       <div className="Welcome">
@@ -31,7 +24,7 @@ class Welcome extends Component {
           </a>
         </h3>
         <Link to="Portofolio_" spy={true} smooth={true}>
-        <button className="scroll-button" onClick={this.handleScrollDown}>
+        <button className="scroll-button">
           <svg
             viewBox="0 0 24 24"
             width="24"
