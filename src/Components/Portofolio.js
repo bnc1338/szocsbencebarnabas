@@ -18,7 +18,7 @@ class Portofolio extends Component {
                 <h2>Freelancing Jobs</h2>
                 <div className="list">
                     <div className="job">
-                        <h4><a style={{textDecoration:"none", color:"rgb(98, 98, 98)"}} href="https://team7percent.onrender.com">www.7percentteam.com</a></h4>
+                        <h4><a style={{textDecoration:"none", color:"rgb(98, 98, 98)"}} href="https://7percentteam.com">www.7percentteam.com</a></h4>
                         <h5>2023</h5>
                     </div>
                     <div className="job">
